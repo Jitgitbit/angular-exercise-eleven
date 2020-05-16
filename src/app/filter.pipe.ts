@@ -1,8 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
-})
+  name: 'filter',
+  pure: false                //----------> keep in mind, although this renders the added servers in realtime, it will cause recalculation of the
+})                          // pipe each time, so this means it actually costs more processing power, so beware for performance cost !!
 export class FilterPipe implements PipeTransform {
 
   transform(value: any, filterString: string, propName: string): any {
