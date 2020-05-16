@@ -7,3 +7,5 @@ npm install --save bootstrap@3
 ng serve
 
 little bootstrap html shortcut trick:     .row>.col-xs-12     +tab
+
+ng g p filter
