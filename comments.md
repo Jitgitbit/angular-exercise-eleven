@@ -9,3 +9,5 @@ ng serve
 little bootstrap html shortcut trick:     .row>.col-xs-12     +tab
 
 ng g p filter
+ng g p reverse
+ng g p sort
